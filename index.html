@@ -8,18 +8,30 @@
     <title>Currency Converter</title>
 </head>
 <body>
-<div class="container">
-    <div class="wrapper">
-        <div class="input1">
-            <input type="number">
+    <h2>Currency Converter</h2>
+    <div class="container">
+        <div class="wrapper">
+            <div class="input1">
+                <select name="currency" id="currency">
+                    <option value="zar" id="zar">Zar</option>
+                    <option value="dollar" id="usd">USD</option>
+                    <option value="euro" id="eur">EUR</option>
+                    <option value="pound" id="gbp">GBP</option>
+                </select>
+                <input type="number" id="result" oninput="forwardConverter()">
+            </div>
+            <div class="input2">
+                <select name="currency2" id="currency2">
+                    <option value="zar">Zar</option>
+                    <option value="dollar">USD</option>
+                    <option value="euro">EUR</option>
+                    <option value="pound">GBP</option>
+                </select>
+                <input type="number" id="result2" oninput="reverseConverter()">
+            </div>
         </div>
-        <div class="input2">
-            <input type="number">
-        </div>
+
     </div>
-
-</div>
-
     <script src="./script.js"></script>
 </body>
 </html>
